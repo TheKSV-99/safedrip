@@ -10,7 +10,7 @@ export default defineConfig({
       '@': resolve(__dirname, './src'),
     },
   },
-  base: '/',
+  base: '/SafeDrip/',
   build: {
     outDir: 'dist',
     sourcemap: false,
