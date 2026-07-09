@@ -25,7 +25,7 @@ const INVENTORS: Inventor[] = [
     role: 'Hardware Architect & CAD Lead',
     email: 'somanadh9963@gmail.com',
     bio: 'Leads physical chassis design, multi-view SolidWorks modeling, and rapid tolerancing. Developed the universal spring-tensioned clamp mount and mechanical casing layouts.',
-    photoPath: '/inventor-somanadh.png',
+    photoPath: `${import.meta.env.BASE_URL}inventor-somanadh.png`,
     icon: ShieldCheck,
   },
   {
@@ -33,7 +33,7 @@ const INVENTORS: Inventor[] = [
     role: 'Firmware & Software Lead',
     email: 'sofiya774@gmail.com',
     bio: 'Designs microcontroller signal paths, infrared attenuation logic, and secure telemetry interfaces. Engineered the core digital filtering loop and ward monitor dashboards.',
-    photoPath: '/inventor-sofiya.png',
+    photoPath: `${import.meta.env.BASE_URL}inventor-sofiya.png`,
     icon: Cpu,
   },
 ];

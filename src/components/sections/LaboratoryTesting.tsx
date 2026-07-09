@@ -22,25 +22,25 @@ const LAB_PHOTOS: LabPhoto[] = [
     id: 'overview',
     title: 'Hospital loop integration',
     description: 'Bedside telemetry unit connected to a laptop running the live IV Drip Monitor server.',
-    imagePath: '/lab-1-overview.jpg',
+    imagePath: `${import.meta.env.BASE_URL}lab-1-overview.jpg`,
   },
   {
     id: 'battery',
     title: 'Battery and circuit assembly',
     description: '3D-printed enclosure showing internal 3.7V 2700mAh battery cell and controller wiring.',
-    imagePath: '/lab-3-battery.jpg',
+    imagePath: `${import.meta.env.BASE_URL}lab-3-battery.jpg`,
   },
   {
     id: 'wiring',
     title: 'Breadboard logic setup',
     description: 'Controller screen mounted on a breadboard verifying keypad response and power bridge.',
-    imagePath: '/lab-4-wiring.jpg',
+    imagePath: `${import.meta.env.BASE_URL}lab-4-wiring.jpg`,
   },
   {
     id: 'monitor',
     title: 'Live telemetry calibration',
     description: 'Interactive drip dashboard on the bedside screen registering flow rates and drops/min.',
-    imagePath: '/lab-5-monitor.png',
+    imagePath: `${import.meta.env.BASE_URL}lab-5-monitor.png`,
   },
 ];
 

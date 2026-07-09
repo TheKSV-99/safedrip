@@ -29,7 +29,7 @@ const FLOW_NODES: FlowNode[] = [
     icon: Shield,
     summary: 'Measures flow rates non-invasively.',
     details: 'The optical clip detects volume fluctuations directly on the drip chamber, generating local data payloads every 500 milliseconds.',
-    imagePath: '/timeline-5-mvp.jpg',
+    imagePath: `${import.meta.env.BASE_URL}timeline-5-mvp.jpg`,
   },
   {
     id: 'wifi',
@@ -37,7 +37,7 @@ const FLOW_NODES: FlowNode[] = [
     icon: Wifi,
     summary: 'Secures transmissions over 802.11 b/g/n.',
     details: 'Wired with an on-chip transceiver that connects to secure clinical networks, transmitting AES-256 encrypted logs to the ward hub.',
-    imagePath: '/connect-1-wifi.png',
+    imagePath: `${import.meta.env.BASE_URL}connect-1-wifi.png`,
   },
   {
     id: 'dashboard',
@@ -45,7 +45,7 @@ const FLOW_NODES: FlowNode[] = [
     icon: Monitor,
     summary: 'Aggregates patient rooms telemetry.',
     details: 'The IV Drip Monitor console runs on ward displays, providing real-time room cards and settings panels for all active beds.',
-    imagePath: '/connect-2-dashboard.png',
+    imagePath: `${import.meta.env.BASE_URL}connect-2-dashboard.png`,
   },
   {
     id: 'alerts',
@@ -53,7 +53,7 @@ const FLOW_NODES: FlowNode[] = [
     icon: Bell,
     summary: 'Triggers instant risk calculations.',
     details: 'If flow metrics cross high/low bounds, the processor triggers visual warnings and empty bag flags.',
-    imagePath: '/connect-3-alerts.png',
+    imagePath: `${import.meta.env.BASE_URL}connect-3-alerts.png`,
   },
   {
     id: 'staff',
@@ -61,7 +61,7 @@ const FLOW_NODES: FlowNode[] = [
     icon: Users,
     summary: 'Alerts ward responders directly.',
     details: 'Forwards alarms directly to nurse panels and pagers, showing patient room details before symptoms escalate.',
-    imagePath: '/connect-5-integration.jpg',
+    imagePath: `${import.meta.env.BASE_URL}connect-5-integration.jpg`,
   },
 ];
 
@@ -197,7 +197,7 @@ export function HospitalConnectivity() {
               <div className="space-y-4">
                 <div className="w-full h-48 rounded-xl bg-surface-100 border border-surface-200 overflow-hidden relative">
                   <img
-                    src="/connect-5-integration.jpg"
+                    src={`${import.meta.env.BASE_URL}connect-5-integration.jpg`}
                     alt="SafeDrip lab-scale clinical loop assembly: breadboard sensor wired beside IV saline bag communicating to dashboard on laptop screen"
                     className="w-full h-full object-cover"
                     loading="lazy"

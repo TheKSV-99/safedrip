@@ -169,7 +169,7 @@ export function Hero() {
             >
               <div className="relative overflow-hidden rounded-2xl shadow-elevated lg:rounded-3xl">
                 <img
-                  src="/hero-product.jpg"
+                  src={`${import.meta.env.BASE_URL}hero-product.jpg`}
                   alt="SafeDrip Smart IV Monitoring System — clip-on device attached to an IV pole, showing real-time monitoring data on its built-in display, in a clinical setting with a patient resting comfortably"
                   className="h-auto w-full max-w-[580px] object-cover"
                   loading="eager"
